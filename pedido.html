@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/estilosMenu.CSS">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  table{
+    background-color: white;
+  }
+</style>
+<body>
+<section id="ContenidoPedido">
+<div class="container">
+  <div class="tablaArticulos">
+  <h2>Gestión de Pedidos</h2>
+  <p>Se muestran pedidos realizados:</p>
+  <div class="container">
+  
+  <hr>
+  <div class="row">
+    <div class="col-12 col-md-12"> 
+      <!-- Contenido -->
+
+<div class="container theme-showcase" role="main">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th class="text-center">Id Pedido</th>
+            <th class="text-center">Nombre</th>
+            <th class="text-center">Teléfono</th>
+            <th class="text-center">Dirección</th>
+            <th class="text-center">Tipo</th>
+            <th class="text-center">Talla</th>
+            <th class="text-center">Color</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Fin Contenido --> 
+</div>
+</div>
+  <!-- Fin row --> 
+</div>
+
+
+
+
+  </div>
+</section>
+</body>
+<script src="js/btnMenu.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#ContenidoPedido").load('pedido.php');
+  });
+</script>
+</html> 

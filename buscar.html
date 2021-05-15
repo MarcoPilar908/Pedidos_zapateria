@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calzado Clásico</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/estilosMenu.CSS">
+<link rel="stylesheet" href="css/tablaBusqueda.CSS">
+<style>
+  label{
+  font-family: Arial;
+  font-size: 16px;
+}
+  .registros{
+  margin: 0;
+  margin-left: 250px;
+  background-color: lightblue;
+  width: 900px;
+  padding: 30px;
+  align-items: center;
+  align-content: center;
+  display: block;
+
+}
+h2{
+  text-align:center;
+}
+form.estiloRegistro{
+  background-color:white;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+
+  border-style: none;
+}
+input[type=text].entrada{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 35px
+}
+.panelTexto{
+  position: relative;
+  opacity: 0.9;
+  background-color: white;
+  align-self: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  align-content: center;
+  align-items: center;
+}
+.panelBusqueda{
+  background-color: white;
+  align-self: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding:3% 10% 3% 10%;
+  align-content: center;
+  align-items: center;
+  text-align:center;
+  position:relative;
+      
+}
+p.four {
+  border-left-style:solid;
+  border-color:blue;
+  border-radius:5px;
+  background-color:#99ddff;
+  text-align:left;
+  font-size:20px;
+  padding:10px;
+  opacity:0.9;
+}
+div.tablaPedido{
+  background-color:white;
+  align-items: center;
+  padding-left: 150px;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+</style>
+<body>
+
+
+  <div class="navbar">
+  <a href="index.html"><i class="fa fa-fw fa-home"></i> Inicio</a> 
+  <a id="Buscar"><i class="fa fa-fw fa-search"></i> Buscar</a>
+  <a id="Registrar"><i class="fa fa-fw fa-user"></i> Registrar</a>
+  <a id="Pedido"><i class="fa fa-fw fa-envelope"></i> Pedido</a> 
+  </div>
+  <hr><br>
+
+<section id="ContenidoBuscar">
+
+<div class="topnav">
+  <a class="estiloBuscar">Prueba escribiendo algo</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" style="text-size:35px;" placeholder="Search.." name="caja_busqueda" id="caja_busqueda">
+      <button ><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<br><br><hr>
+<div class="panelTexto">
+  <h1>Tabla de Artículos</h1>
+  <p>Se muestran resultados similares al texto de búsqueda.</p>
+</div><div class="panelBusqueda" id="datos"></div>
+</section>
+  
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="js/btnMenu.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.min"></script>
+<script>
+  $(document).ready(function(){
+    $("#ContenidoPedido").load('pedido.php');
+  });
+</script>
+</html> 

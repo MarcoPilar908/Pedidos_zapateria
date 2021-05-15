@@ -1,0 +1,36 @@
+INSERT INTO `inventario` (`Id_inventario`, `Tipo`, `Material`, `Talla`, `Precio`, `Ubicacion`, `Color`)
+VALUES
+	(NULL, 'Zapato', 'Gamusa', '26-29', '899.90', 'Estante principal', 'Café'),
+	(NULL, 'Zapato', 'Ortopédico', '27-29', '1200', 'Estante principal', 'Negro'),
+	(NULL, 'Zapato', 'Piel con forro Textil', '25-29', '800', 'Estante principal', 'Café'),
+	(NULL, 'Zapato', 'Velcro textil', '25-30', '1000', 'Estante principal', 'Negro'),
+	(NULL, 'Zapato', 'Piel transpirable', '25-30', '800', 'Estante principal', 'Café'),
+	(NULL, 'Zapato', 'Piel borrego', '25-27', '849.90', 'Estante principal', 'Café'),
+	(NULL, 'Zapato', 'Piel con forro Textil', '25-27', '849.90', 'Estante principal', 'Negro'),
+	(NULL, 'Zapato', 'Piel transpirable', '25-28', '800', 'Estante principal', 'Café'),
+	(NULL, 'Zapato', 'Piel confortable footbed', '23-25', '699.90', 'Estante principal', 'Café'),
+	(NULL, 'Zapato', 'Velcro transpirable', '17-23', '349.90', 'Estante principal', 'Negro'),
+	(NULL, 'Zapato', 'Forro transpirable', '22-30', '749.90', 'Estante principal', 'Café'),
+	(NULL, 'Zapato', 'Velcro ajustable', '25-27', '499.90', 'Estante principal', 'Café, Negro'),
+	(NULL, 'Zapato', 'Piel plantilla Hexafoam', '27-29', '898.90', 'Estante principal', 'Negro'),
+	(NULL, 'Zapato', 'Piel plantilla 3D Foam', '23-25', '799.90', 'Estante principal', 'Café'),
+	(NULL, 'Zapato', 'Piel plantilla Acojinada', '17-23', '749.90', 'Estante principal', 'Negro'),
+	(NULL, 'Zapato', 'Piel borrego elástico lateral', '25', '379.90', 'Estante principal', 'Negro, Café'),
+
+	(NULL, 'Teni deportivo', 'Forro transpirable ligero', '23-28', '379.90', 'Estante B', 'Negro, Naranja'),
+	(NULL, 'Teni deportivo', 'Forro transpirable suela TPU', '25-29', '379.90', 'Estante B', 'Negro, Azul'),
+	(NULL, 'Teni deportivo', 'Forro transpirable suela ESD', '17-23', '549.90', 'Estante B', 'Negro, Verde'),
+	(NULL, 'Teni deportivo', 'Forro transpirable suela TPU', '22-29', '379.90', 'Estante B', 'Cian, Rojo'),
+	(NULL, 'Teni deportivo', 'Forro transpirable elástico', '25-30', '379.90', 'Estante B', 'Blanco, Rojo'),
+
+	(NULL, 'Teni diseño urbano', 'Forro transpirable elástico', '23-30', '649.90', 'Estante C', 'Blanco, Rojo'),
+	(NULL, 'Teni diseño urbano', 'Forro textil transpirable', '25-27', '699.90', 'Estante C', 'Blanco, Rojo'),
+	(NULL, 'Teni diseño urbano', 'Forro elástico suela ligera', '25-26', '779.90', 'Estante C', 'Blanco, Rojo'),
+	(NULL, 'Teni diseño urbano', 'Forro textil elástico', '24-30', '399.90', 'Estante C', 'Blanco, Rojo'),
+	(NULL, 'Teni diseño urbano', 'Combinación resistente textil', '24-28', '449.90', 'Estante C', 'Blanco, Rojo'),
+
+	(NULL, 'Bota', 'Suela doble densidad', '25-30', '949.90', 'Estante D', 'Negro'),
+	(NULL, 'Bota', 'Corte de piel transpirable', '27-30', '779.90', 'Estante D', 'Café'),
+	(NULL, 'Bota', 'Forro transpirable de uso rudo', '24-29', '379.90', 'Estante D', 'Negro'),
+	(NULL, 'Bota', 'Forro transpirable de uso rudo', '17-23', '579.90', 'Estante D', 'Negro, Café,Rosa'),
+	(NULL, 'Bota', 'Forro transpirable elástico', '23-26', '479.90', 'Estante D', 'Negro');

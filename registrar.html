@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/estilosMenu.CSS">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body{
+  background-color: lightblue;
+  font-family: sans-serif;
+}
+
+.registros{
+  margin: 0;
+  margin-left: 250px;
+  background-color: lightblue;
+  width: 900px;
+  padding: 30px;
+  align-items: center;
+  align-content: center;
+  display: block;
+
+}
+form.estiloRegistro{
+  background-color:white;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+
+  border-style: solid 1px;
+}
+hr{
+  color:blue;
+}
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 35px
+}
+
+</style>
+<body>
+
+
+<section id="ContenidoRegistrar">
+  
+    <div class="registros">
+      <h2>Datos del usuario</h2>  
+      <hr>
+      <form action="App/registrar.php" method="POST" class="estiloRegistro">
+        <br>
+        <label for="usr">Nombre Completo:</label><br>
+        <br>
+        <input type="text" id="nombre" name="nombre" class="form-control form-control">
+        <br>
+        <label for="usr">Teléfono:</label>
+        <br>
+        <input type="text" id="telefono" name="telefono" class="form-control form-control">
+        <br>
+        <label for="usr">Dirección:</label>
+        <br>
+        <input type="text" id="direccion" name="direccion"class="form-control form-control">
+        <br>
+        <label for="usr">E-mail:</label>
+        <input type="E-mail" id="correo" name="correo" class="form-control form-control">
+        <br>
+        <input type="submit" value="Registrar Usuario" class="btn btn-primary btn-block"></input>
+        <br><br>
+      </form>
+      <br><br>
+      <h2>Datos del artículo</h2>
+      <hr>
+      <form  action="App/registrarArticulo.php" method="POST" class="estiloRegistro" >
+        <br>
+        <label for="usr">Tipo de calzado:</label>
+        <br>
+        <input type="text" id="tipo" name="tipo" class="form-control form-control">
+        <br>
+        <label for="usr">Material:</label>
+        <br>
+        <input type="text" id="material" name="material" class="form-control form-control">
+        <br>
+        <label for="usr">Talla:</label>
+        <br>
+        <input type="text" id="talla" name="talla" class="form-control form-control">
+        <br>
+        <label for="usr">Color:</label>
+        <br>
+        <input type="text" id="color" name="color" class="form-control form-control">
+        <br>
+        <input type="submit" value="Registrar Artículo" class="btn btn-primary btn-block"></input>
+        <br><br>
+      </form>
+    </div>
+  
+
+</section>
+
+</body>
+<script>
+  $(document).ready(function(){
+    $("#ContenidoPedido").load('pedido.php');
+  });
+</script>
+</html> 
